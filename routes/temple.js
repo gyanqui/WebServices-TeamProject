@@ -6,4 +6,13 @@ routes.get('/:temple_id', temples.findOne);
 
 routes.post('/', temples.create);
 
+// Update a Temple with id
+routes.put('/:id', temples.update);
+
+// Delete a Temple with id
+routes.delete('/:id', temples.delete);
+
+// Create a new Temple
+routes.delete('/', temples.deleteAll);
+
 module.exports = routes;
